@@ -1,0 +1,47 @@
+{
+    "data" : {
+      "itemList": [
+        {
+          "name": "Company Info",
+          "isShow": true,
+          "data": [
+            {
+              "name": "Feedback"
+            },
+            {
+              "name": "Customer Reviews"
+            },
+            {
+              "name": "About Us"
+            },
+            {
+              "name": "Contact Us"
+            },
+            {
+              "name": "News"
+            }
+          ]
+        },
+        {
+          "name": "User Center",
+          "isShow": false,
+          "data": []
+        },
+        {
+          "name": "Paymenet & Shipping",
+          "isShow": false,
+          "data": []
+        },
+        {
+          "name": "Company Policies",
+          "isShow": false,
+          "data": []
+        },
+        {
+          "name": "Other Information",
+          "isShow": false,
+          "data": []
+        }
+      ]
+    }
+}

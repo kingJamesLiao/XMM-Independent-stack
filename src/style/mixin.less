@@ -1,0 +1,104 @@
+@blue: #3190e8;  
+@bc: #e4e4e4;
+@fc:#fff;
+
+// 背景图片地址和大小
+.bis(@url) { 
+	background-image: url(@url);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+}
+
+//定位全屏
+.allcover{
+	position:absolute;
+	top:0;
+	right:0;
+}
+.common{
+	padding-left: 70px;
+    padding-top: 45px;
+    min-height: 100%;
+	background: #F2F2F2;
+	.el-row {
+		margin-bottom: 20px;
+		&:last-child {
+		  margin-bottom: 0;
+		}
+	  }
+	  .el-col {
+		border-radius: 2px;
+	  }
+	  .bg-purple-dark {
+		background: #fff;
+	  }
+	  .bg-purple {
+		background: #fff;
+	  }
+	  .bg-purple-light {
+		background: #fff;
+	  }
+	  .grid-content {
+		border-radius: 2px;
+		min-height: 36px;
+	  }
+	  .row-bg {
+		padding: 10px 0;
+		background-color: #f9fafc;
+	  }
+}
+
+//transform上下左右居中
+.ctt {  
+	position: absolute;
+	top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+//定位上下左右居中
+.ctp(@width, @height) {  
+	position: absolute;
+	top: 50%;
+    left: 50%;
+    margin-top: -@height/2;
+    margin-left: -@width/2;
+}
+
+//定位上下居中
+.tb {  
+	position: absolute;
+	top: 50%;
+    transform: translateY(-50%);
+}
+
+//定位左右居中
+.lr {  
+	position: absolute;
+	left: 50%;
+    transform: translateX(-50%);
+}
+
+//宽高
+.wh(@width, @height){
+	width: @width;
+	height: @height;
+}
+
+//字体大小、行高、字体
+.ft(@size, @line-height) {  
+	font-size: @size;
+	line-height:@line-height;
+}
+
+//字体大小，颜色
+.sc(@size, @color){
+	font-size: @size;
+	color: @color;
+}
+
+//flex 布局和 子元素 对其方式
+.fj(@type: space-between){
+	display: flex;
+	justify-content: @type;
+
+}
